@@ -31,10 +31,11 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+function countEvenNumbers(arrayOfNumbers){
+	const evenNumbers = arrayOfNumbers.filter (even => even%2 === 0 )
+	return evenNumbers.length
 }
- // assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers=countEvenNumbers
 
 /**
  * Challenge - 3
